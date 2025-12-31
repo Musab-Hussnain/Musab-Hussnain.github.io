@@ -71,6 +71,7 @@ figure {
     color: #ff6b35;
     border: 2px solid #ff6b35;
     transform: translateY(-2px);
+    box-shadow: 0 15px 40px #ff6b357e;
 }
 
 .btn-secondary {
@@ -83,6 +84,7 @@ figure {
     background: #1a1a1a;
     color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .btn-white {
@@ -339,17 +341,17 @@ figure {
 
 .feature-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover .feature-icon-box {
+    transform: rotateY(360deg);
+    transition: ease-in 0.5s;
 }
 
 .feature-icon-box {
     font-size: 2.5rem;
     margin-bottom: 15px;
-}
-
-.feature-icon-box:hover {
-    transform: rotate(360deg);
-    transition: ease-in 0.5s;
 }
 
 .feature-card h3 {
@@ -520,6 +522,7 @@ figure {
 
 .team-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .team-image {
@@ -584,7 +587,7 @@ figure {
 
 .menu-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .menu-card-image {
@@ -1030,6 +1033,10 @@ figure {
 
     .footer-nav {
         justify-content: center;
+    }
+    .footer-container{
+        display: flex;
+        gap: 60px;
     }
 }
 
